@@ -6,25 +6,40 @@
 <meta name="description" content="Introduction to HTML">
 <meta name="author" content="Dr. Web">
 <title>What is HTML 5?</title>
-	<style>
-		nav a {
-			padding: 10px;
-		}
-	</style>
+<style>
+	/* Layout */
+#container {
+	width: 80%;
+	min-height: 90vh;
+	margin: auto;
+	border: 1px solid black;
+}
+#header {
+	border-bottom: 1px solid black;
+	padding: 10px;
+	text-align: center;
+	background-color: aquamarine;
+}
+#nav {
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+#main {
+	padding: 10px;
+}
+</style>
 </head>
 <body>
-	<nav>
-    <a href="#">Home</a>
-	<a href="Pages/hello-world.html">Hello World!</a>
-	<a href="Pages/predatory animals.html">Predatory animals</a>
-    <a href="https://www.cphbusiness.dk" target="_blank">My school</a>
-	<a href="Pages/contact.html">Contact</a>
-	</nav>
-<header>
+<!-- Main layout container -->
+<div id="container">
+	<div id="header"><header>
   <h1>Introduction to HTML 5</h1>
-</header>
-	<!-- Navigation -->
-<section>
+</header></div>
+  <div id="nav">
+	  <!-- Navigation -->
+    <nav> <a href="#">Home</a> <a href="pages/hello-world.html">Hello World!</a> <a href="pages/predatory-animals.html">Predatory animals</a> <a href="https://www.cphbusiness.dk" target="_blank">My school</a> <a href="pages/contact.html">Contact</a> </nav>
+  </div>
+  <div id="main"><section>
   <h2>What is HTML 5?</h2>
   <article>
     <h3>HTML 5: A new standard</h3>
@@ -37,14 +52,15 @@
       <mark>Tim Berners-Lee</mark>
       . The purpose was to make it easier for scientists at different universities to gain access to each other's research documents. The project became a bigger success than Tim Berners-Lee had ever imagined. By inventing HTML he laid the foundation for the web as we know it today.</p>
     <figure> <img src="images/tim-berners-lee.jpg" width="800" height="533" alt=""/>
-<figcaption>Tim Berners Lee - The inventor of the World Wide Web</figcaption>
+      <figcaption>Tim Berners Lee - The inventor of the World Wide Web</figcaption>
     </figure>
   </article>
   <article>
     <h3>HTML: The foundation of all websites</h3>
     <p>HTML elements form the building blocks of all websites. HTML allows images and objects to be embedded and can be used to create interactive forms. It provides a means to create structured documents by denoting<em>structural semantics</em>for text such as headings, paragraphs, lists, links, quotes and other items. It can embed scripts in languages such as JavaScript which affect the behavior of HTML webpages.</p>
   </article>
-</section>
-<footer> <small>Copyright &copy; 2018 Classroom material. No rights reserved ;-).</small> </footer>
+</section></div>
+  <div id="footer"><footer> <small>Copyright &copy; 2018 Classroom material. No rights reserved ;-).</small> </footer></div>
+</div>
 </body>
 </html>

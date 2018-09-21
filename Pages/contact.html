@@ -1,42 +1,84 @@
 <!doctype html>
 <html lang="en">
-	<head>
-	<meta charset="UTF-8">
-	<title>Contact</title>
-	<style>
-		/* Form style */
-		form {
-			width: 40vw;
-			margin: 20px auto;
-			border: 1px solid black;
-			padding: 20px;
-		}
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<style>
+/* Layout */
+#container {
+	width: 80%;
+	min-height: 90vh;
+	margin: auto;
+	border: 1px solid black;
+}
+#header {
+	border-bottom: 1px solid black;
+	padding: 10px;
+	text-align: center;
+	background-color: aquamarine;
+}
+#nav {
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+#main {
+	padding: 10px;
+}
+/* Form style */
+form {
+	width: 40vw;
+	margin: 20px auto;
+	border: 1px solid black;
+	padding: 20px;
+}
 nav a {
 	padding: 10px;
 }
 </style>
-	</head>
+</head>
 
-	<body>
-<nav> <a href="../index.html">Home</a> <a href="hello-world.html">Hello World!</a> <a href="predatory animals.html">Predatory animals</a> <a href="https://www.cphbusiness.dk" target="_blank">My school</a> <a href="#">Contact</a> </nav>
-<header>
+<body>
+<!-- Main layout container -->
+<div id="container">
+  <div id="header">
+    <header>
       <h1>Contact me!</h1>
     </header>
-<!-- webfrom -->
-<form action="mailto:cph-sg135@cphbusiness.dk" method="post" enctype="text/plain">
-	<p><label>Your Name:</label></p>
+  </div>
+  <div id="nav">
+    <nav> <a href="../index.html">Home</a> <a href="hello-world.html">Hello World!</a> <a href="predatory-animals.html">Predatory animals</a> <a href="https://www.cphbusiness.dk" target="_blank">My school</a> <a href="#">Contact</a> </nav>
+  </div>
+  <div id="main">
+    <form action="mailto:cph-sg135@cphbusiness.dk" method="post" enctype="text/plain">
       <p>
-    <input type="text" name="name" placeholder="Type your name.." autofocus required>
-  </p>
-	<p><label>Your E-mail:</label></p>
+        <label>Your Name:</label>
+      </p>
       <p>
-    <input type="email" name="email" placeholder="Type your email.." autofocus required>
-  </p>
-	<p><label>Your Message</label></p>
-		<p><textarea name="comment" placeholder="Your message..."></textarea></p>
-	<p>I love this!<input type="radio" name="love"></p>
-	<p>I hate this!<input type="radio" name="hate"></p>
-	<input type="submit" value="Submit Form">
+        <input type="text" name="name" placeholder="Type your name.." autofocus required>
+      </p>
+      <p>
+        <label>Your E-mail:</label>
+      </p>
+      <p>
+        <input type="email" name="email" placeholder="Type your email.." required>
+      </p>
+      <p>
+        <label>Your Message</label>
+      </p>
+      <p>
+        <textarea name="comment" placeholder="Your message..."></textarea>
+      </p>
+      <p>I love this!
+        <input type="radio" name="love">
+      </p>
+      <p>I hate this!
+        <input type="radio" name="hate">
+      </p>
+		<p>
+      <input type="submit" value="Submit Form"></p>
     </form>
+  </div>
+  <div id="footer"></div>
+</div>
 </body>
 </html>
