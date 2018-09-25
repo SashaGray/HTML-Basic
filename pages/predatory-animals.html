@@ -17,18 +17,41 @@ th, td {
 	border: 1px solid black;
 	padding: 10px;
 }
+/* Layout */
+#container {
+	width: 80%;
+	min-height: 90vh;
+	margin: auto;
+	border: 1px solid black;
+}
+#header {
+	border-bottom: 1px solid black;
+	padding: 10px;
+	text-align: center;
+	background-color: aquamarine;
+}
+#nav {
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+#main {
+	margin-left: 170px;
+}
 nav a {
 	padding: 10px;
+	border-bottom: 1px solid black;
 }
 </style>
 </head>
 
 <body>
-<header>
+	<!-- Main layout container -->
+<div id="container">
+	<div id="header"><header>
   <h1>Predatory animals</h1>
-</header>
-<nav> <a href="../index.html">Home</a> <a href="hello-world.html">Hello World!</a> <a href="#">Predatory animals</a> <a href="https://www.cphbusiness.dk" target="_blank">My school</a> <a href="contact.html">Contact</a> </nav>
-<table>
+</header></div>
+	<div id="nav"><nav> <a href="../index.html">Home</a> <a href="hello-world.html">Hello World!</a> <a href="#">Predatory animals</a> <a href="contact.html">Contact</a> <a href="https://www.cphbusiness.dk" target="_blank">My school</a> </nav></div>
+	<div id="main"><table>
   <caption>
   The animal table
   </caption>
@@ -85,6 +108,9 @@ nav a {
       <td colspan="3" height="30">All pictures from <a href="http://www.naturephoto-cz.com/mammals/predatory-animals.html" target="_blank">http://www.naturephoto-cz.com/mammals/predatory-animals.html</a></td>
     </tr>
   </tfoot>
-</table>
+</table></div>
+	<div id="footer"></div>
+</div>
+
 </body>
 </html>
